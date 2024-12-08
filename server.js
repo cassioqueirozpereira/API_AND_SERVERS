@@ -4,6 +4,9 @@ import routes from "./src/routes/postsRoutes.js";
 
 // Iniciamos o aplicativo Express. A constante 'app' representa o nosso servidor.
 const app = express();
+
+app.use(express.static("uploads"))
+
 routes(app)
 
 // Inicia o servidor na porta 3000. 
